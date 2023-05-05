@@ -1,0 +1,21 @@
+.photo-container {
+    display: flex;
+}
+img {
+    width: 35%;
+}
+li {
+    list-style-type: none;
+    margin: 1rem;
+}
+.btn {
+    border-radius: 50px !important;
+}
+@media screen and (max-width: 500px) {
+    .photo-container {
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+    }
+}

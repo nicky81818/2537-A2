@@ -1,0 +1,14 @@
+<%- include("templates/header") %>
+    <% if (authenticated) { %>
+        <div class="container">
+            <h1>Hello, <%= user %>!</h1>
+            <button onclick="window.location.href='/members'">Go to Members Area</button>
+            <button onclick="window.location.href='/logout'">Logout</button>`
+        </div>
+    <% } else { %>
+        <div class="container">
+            <button onclick="window.location.href='/signup'">Sign up</button>
+            <button onclick="window.location.href='/login'">Login</button>
+        </div>
+    <% } %>
+<%- include("templates/footer") %>
