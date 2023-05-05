@@ -6,20 +6,4 @@
             <%- include("templates/user", {user: users[i]}) %>
         <% } %>
     </div>
-    <script>
-        // async function changeToAdmin() {
-        //         await userCollection.updateOne({email: req.session.email}, {$set: {type: "admin"}})
-        //         req.session.user_type = "admin";
-        //         console.log("changed to admin")
-        // }
-
-        // async function changeToUser() {
-        //     await userCollection.updateOne({email: req.session.email}, {$set: {type: "user"}})
-        //     req.session.user_type = "user";
-        //     console.log("changed to user")
-        // }
-        // document.getElementById("changeToAdmin").addEventListener("click", changeToAdmin);
-        // document.getElementById("changeToUser").addEventListener("click", changeToUser);
-
-    </script>
 <%- include("templates/footer") %>
